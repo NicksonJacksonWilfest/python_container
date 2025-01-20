@@ -1,0 +1,11 @@
+services:
+  py-runtime:
+    image: python:3.12-alpine3.20⁠
+    restart: unless-stopped
+    volume:
+    networks:
+      - tech_net
+    
+networks:
+  tech_net:
+    external: true
